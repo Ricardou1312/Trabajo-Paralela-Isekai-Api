@@ -1,0 +1,689 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Isekai",
+        "description": "Servicio REST que expone información de un mundo isekai ficticio.",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/v1/info/genders": {
+            "get": {
+                "tags": [
+                    "Info"
+                ],
+                "summary": "Obtener listado de géneros",
+                "operationId": "305a61324199609b2015d29394aa1f0d",
+                "responses": {
+                    "200": {
+                        "description": "Listado de géneros obtenido exitosamente",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "code": {
+                                                "type": "string",
+                                                "example": "F"
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "example": "Femenino"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "No hay información de géneros disponible",
+                        "content": {
+                            "application/problem+json": {
+                                "schema": {
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "status": {
+                                            "type": "integer",
+                                            "example": 404
+                                        },
+                                        "detail": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "instance": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "example": {
+                                                "additionalProp1": "string",
+                                                "additionalProp2": "string",
+                                                "additionalProp3": "string"
+                                            },
+                                            "additionalProperties": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno no manejado",
+                        "content": {
+                            "application/problem+json": {
+                                "schema": {
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "status": {
+                                            "type": "integer",
+                                            "example": 500
+                                        },
+                                        "detail": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "instance": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "example": {
+                                                "additionalProp1": "string",
+                                                "additionalProp2": "string",
+                                                "additionalProp3": "string"
+                                            },
+                                            "additionalProperties": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/info/species": {
+            "get": {
+                "tags": [
+                    "Info"
+                ],
+                "summary": "Obtener listado de especies",
+                "operationId": "3dddab0dc5e1c4061893cb8c09972d09",
+                "responses": {
+                    "200": {
+                        "description": "Listado de especies obtenido exitosamente",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "code": {
+                                                "type": "string",
+                                                "example": "HU"
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "example": "Humanos"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "No hay información de especies disponible",
+                        "content": {
+                            "application/problem+json": {
+                                "schema": {
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "status": {
+                                            "type": "integer",
+                                            "example": 404
+                                        },
+                                        "detail": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "instance": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "example": {
+                                                "additionalProp1": "string",
+                                                "additionalProp2": "string",
+                                                "additionalProp3": "string"
+                                            },
+                                            "additionalProperties": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno no manejado",
+                        "content": {
+                            "application/problem+json": {
+                                "schema": {
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "status": {
+                                            "type": "integer",
+                                            "example": 500
+                                        },
+                                        "detail": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "instance": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "example": {
+                                                "additionalProp1": "string",
+                                                "additionalProp2": "string",
+                                                "additionalProp3": "string"
+                                            },
+                                            "additionalProperties": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/stats/count": {
+            "get": {
+                "tags": [
+                    "Stats"
+                ],
+                "summary": "Obtener conteo y porcentaje de personas según filtros",
+                "operationId": "e586053782635dacfda03b7676c2f661",
+                "parameters": [
+                    {
+                        "name": "speciesCode",
+                        "in": "query",
+                        "description": "ID de la especie (species_fk)",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    },
+                    {
+                        "name": "strataCode",
+                        "in": "query",
+                        "description": "ID del estrato (strata_fk)",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "example": 3
+                        }
+                    },
+                    {
+                        "name": "genderCode",
+                        "in": "query",
+                        "description": "ID del género (gender_fk)",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "example": 2
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Estadística de conteo obtenida exitosamente",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "count": {
+                                            "type": "integer",
+                                            "example": 42
+                                        },
+                                        "percentage": {
+                                            "type": "number",
+                                            "format": "float",
+                                            "example": 12.5
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "No hay datos disponibles para los filtros proporcionados",
+                        "content": {
+                            "application/problem+json": {
+                                "schema": {
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "status": {
+                                            "type": "integer",
+                                            "example": 404
+                                        },
+                                        "detail": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "instance": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "example": {
+                                                "additionalProp1": "string",
+                                                "additionalProp2": "string",
+                                                "additionalProp3": "string"
+                                            },
+                                            "additionalProperties": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno no manejado",
+                        "content": {
+                            "application/problem+json": {
+                                "schema": {
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "status": {
+                                            "type": "integer",
+                                            "example": 500
+                                        },
+                                        "detail": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "instance": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "example": {
+                                                "additionalProp1": "string",
+                                                "additionalProp2": "string",
+                                                "additionalProp3": "string"
+                                            },
+                                            "additionalProperties": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/stats/age": {
+            "get": {
+                "tags": [
+                    "Stats"
+                ],
+                "summary": "Obtener estadísticas de edad (mínimo, máximo, promedio, desviación estándar)",
+                "operationId": "bcf12478b1a2db13397cfac7069e005d",
+                "parameters": [
+                    {
+                        "name": "speciesCode",
+                        "in": "query",
+                        "description": "ID de la especie (species_fk)",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "example": "HU"
+                        }
+                    },
+                    {
+                        "name": "strataCode",
+                        "in": "query",
+                        "description": "ID del estrato (strata_fk)",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "example": 5
+                        }
+                    },
+                    {
+                        "name": "genderCode",
+                        "in": "query",
+                        "description": "ID del género (gender_fk)",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "example": "M"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Estadística de edad obtenida exitosamente",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "min": {
+                                            "type": "integer",
+                                            "example": 18
+                                        },
+                                        "max": {
+                                            "type": "integer",
+                                            "example": 99
+                                        },
+                                        "mean": {
+                                            "type": "number",
+                                            "format": "float",
+                                            "example": 45.35
+                                        },
+                                        "stddev": {
+                                            "type": "number",
+                                            "format": "float",
+                                            "example": 12.75
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "No hay datos disponibles para los filtros proporcionados",
+                        "content": {
+                            "application/problem+json": {
+                                "schema": {
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "status": {
+                                            "type": "integer",
+                                            "example": 404
+                                        },
+                                        "detail": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "instance": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "example": {
+                                                "additionalProp1": "string",
+                                                "additionalProp2": "string",
+                                                "additionalProp3": "string"
+                                            },
+                                            "additionalProperties": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno no manejado",
+                        "content": {
+                            "application/problem+json": {
+                                "schema": {
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "status": {
+                                            "type": "integer",
+                                            "example": 500
+                                        },
+                                        "detail": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "instance": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "example": {
+                                                "additionalProp1": "string",
+                                                "additionalProp2": "string",
+                                                "additionalProp3": "string"
+                                            },
+                                            "additionalProperties": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/info/strata": {
+            "get": {
+                "tags": [
+                    "Info"
+                ],
+                "summary": "Obtener listado de estratos",
+                "operationId": "f7ff093a685070b9efe56634d733461a",
+                "responses": {
+                    "200": {
+                        "description": "Listado de estratos obtenido exitosamente",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "code": {
+                                                "type": "string",
+                                                "example": "001"
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "example": "Estrato Alto"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "No hay información de estratos disponible",
+                        "content": {
+                            "application/problem+json": {
+                                "schema": {
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "status": {
+                                            "type": "integer",
+                                            "example": 404
+                                        },
+                                        "detail": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "instance": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "example": {
+                                                "additionalProp1": "string",
+                                                "additionalProp2": "string",
+                                                "additionalProp3": "string"
+                                            },
+                                            "additionalProperties": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Error interno no manejado",
+                        "content": {
+                            "application/problem+json": {
+                                "schema": {
+                                    "properties": {
+                                        "type": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "title": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "status": {
+                                            "type": "integer",
+                                            "example": 500
+                                        },
+                                        "detail": {
+                                            "type": "string",
+                                            "example": "string"
+                                        },
+                                        "instance": {
+                                            "type": "string",
+                                            "example": "https://example.com/"
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "example": {
+                                                "additionalProp1": "string",
+                                                "additionalProp2": "string",
+                                                "additionalProp3": "string"
+                                            },
+                                            "additionalProperties": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Info",
+            "description": "Información base. Proporciona listas de especies, estratos sociales y géneros."
+        },
+        {
+            "name": "Stats",
+            "description": "Proporciona estadísticas calculadas sobre las personas, como distribución de edades y conteo por filtros."
+        }
+    ]
+}
