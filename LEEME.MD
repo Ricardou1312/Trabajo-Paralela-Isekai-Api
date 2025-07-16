@@ -30,4 +30,5 @@ php artisan key:generate
 ## Comando para iniciar el servidor en local
 php artisan serve
 
+luego en cualquier navegador localhost:8000 para ver como funciona la pagina, se agrego un tipo de "Landing Page" para que tener un acceso mas directo hacia las URLs 
 
