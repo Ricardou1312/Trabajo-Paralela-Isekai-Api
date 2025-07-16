@@ -10,7 +10,7 @@ Dependencias Necesarias:
 
 ## Instalación php 
 
-** sudo apt install -y php php-cli php-common php-mbstring php-xml php-curl php-pgsql php-bcmath php-zip unzip curl git
+sudo apt install -y php php-cli php-common php-mbstring php-xml php-curl php-pgsql php-bcmath php-zip unzip curl git
 
 ## Instalacion Composer
 
