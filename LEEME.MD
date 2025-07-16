@@ -6,7 +6,7 @@ Dependencias Necesarias:
 - PHP >= 8.1
 - Composer
 - PostgreSQL
-- Laravel (opcional: se instala automáticamente con dependencias)
+- Laravel 
 
 ## Instalación php 
 
